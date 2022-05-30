@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KamTips - Total Price x Checked values - JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div
+        class="mk-container container mt-2 d-flex flex-column align-items-center justify-content-center h-100 text-center">
+        <h4>Invoice #123</h4>
+        <div class="alert alert-info">Total price will multiply depends on selected tables.<br />
+            if you change the price, the tables will got unchecked
+            </p>
+
+            <form>
+                <div class="input-group mb-3">
+                    <span class="input-group-text col-3" id="basic-addon1">Served tables</span>
+                    <div class="col-sm-9">
+                        <div
+                            class="align-items-center bg-white border d-flex flex-wrap input-group-text justify-content-start">
+
+                            <div>
+                                <input class="p-2 checktables" type="checkbox" name="served_tables[]">
+                                <label class="ms-1 me-2 my-0 text-2">Table #221</label>
+                            </div>
+
+                            <div>
+                                <input class="p-2 checktables" type="checkbox" name="served_tables[]">
+                                <label class="ms-1 me-2 my-0 text-2">Table #222</label>
+                            </div>
+                            <div>
+                                <input class="p-2 checktables" type="checkbox" name="served_tables[]">
+                                <label class="ms-1 me-2 my-0 text-2">Table #223</label>
+                            </div>
+
+                            <div>
+                                <input class="p-2 checktables" type="checkbox" name="served_tables[]">
+                                <label class="ms-1 me-2 my-0 text-2">Table #224</label>
+                            </div>
+
+
+                            <div>
+                                <input class="p-2 checktables" type="checkbox" name="served_tables[]">
+                                <label class="ms-1 me-2 my-0 text-2">Table #225</label>
+                            </div>
+
+
+                            <div>
+                                <input class="p-2 checktables" type="checkbox" name="served_tables[]">
+                                <label class="ms-1 me-2 my-0 text-2">Table #226</label>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text col-3" id="total-price-label">Total Price</span>
+                    <input id="total_price" type="text" class="form-control" placeholder="123" aria-label="Price"
+                        aria-describedby="total-price-label">
+                </div>
+            </form>
+        </div>
+        <p>Created by - <a href="https://linkedin.com/in/medredakamal">Med Reda Kamal</a></p>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
